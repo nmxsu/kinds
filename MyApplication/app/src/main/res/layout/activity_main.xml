@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff00ff"
+    android:orientation="vertical">
+
+    <!-- 上边主页面 -->
+
+    <fragment
+        android:id="@+id/fragement_main"
+        android:name="com.hxmic.myapplication.Fragment.FragmentMain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_search"
+
+        android:name="com.hxmic.myapplication.Fragment.FragmentSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_setting"
+        android:name="com.hxmic.myapplication.Fragment.FragmentSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <!-- 底部菜单页面 -->
+
+    <RadioGroup
+        android:id="@+id/bottomRg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="#00ff00"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/rbOne"
+            style="@style/Animation.AppCompat.DropDownUp"
+            android:checked="true"
+            android:drawableTop="@drawable/one"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rbTwo"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:drawableTop="@drawable/one"
+            android:text="搜索" />
+
+        <RadioButton
+            android:id="@+id/rbThree"
+            style="@style/AlertDialog.AppCompat.Light"
+            android:drawableTop="@drawable/one"
+            android:text="设置"
+            android:layout_weight="0.23" />
+    </RadioGroup>
+
+</LinearLayout>
